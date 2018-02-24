@@ -65,8 +65,8 @@
 //                                                                                           ASRelativeDimensionMakeWithPoints(60.0),
 //                                                                                           ASRelativeDimensionMakeWithPoints(40.0)
 //                                                                                           ));
-    mainStack.style.width = ASRelativeDimensionMakeWithPoints(60.0);
-    mainStack.style.height = ASRelativeDimensionMakeWithPoints(40.0);
+    mainStack.style.width = ASDimensionMake(0.6);
+    mainStack.style.height = ASDimensionMake(0.4);
     return mainStack;
 //    return [ASStaticLayoutSpec staticLayoutSpecWithChildren:@[mainStack]];
 
