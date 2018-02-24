@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.author             = { "Gary" => "zguanyu@163.com" }
   s.social_media_url   = "http://www.cupinn.com"
   s.ios.deployment_target = "8.0"
-  s.source       = { :git => "https://git.tticar.com/pods/MyBBTableViewManager.git", :tag => '0.0.4'}
+  s.source       = { :git => "https://git.tticar.com/pods/MyBBTableViewManager.git", :tag => '0.0.5'}
   s.source_files  = "MyBBTableViewManager/MyBBTableViewManager/**/*.{h,m,c}"
   s.requires_arc = true
   s.dependency 'pop'
