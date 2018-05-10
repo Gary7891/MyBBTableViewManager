@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "RootViewController.h"
+#import <BBNetwork.h>
+#import "BBTableViewDataSourceConfig.h"
+#import "Utility.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +20,46 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    
+    [UIApplication sharedApplication].statusBarStyle = UIStatusBarStyleLightContent;
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window setBackgroundColor:[UIColor whiteColor]];
+    
+    [[BBNetworkConfig sharedInstance] setBaseUrl:TT_Global_Api_Domain];
+    NSString *deviceId = [Utility getUniqueDeviceID];
+    NSDictionary *dic =@{
+                         @"Authorization"       : DEFAULT_ACCESS_TOKEN,
+                         @"VERSION"     : @"3.0.0",
+                         @"x-platform"    : @"iOS",
+                         @"x-client"      : @"store",
+                         @"x-equCode"     : deviceId?: @"dsdsdsdsdsddsds"
+                         };
+    [[BBNetworkConfig sharedInstance] setRequestHeaderFieldValueDictionary:dic];
+    
+    
+    [[BBTableViewDataSourceConfig sharedInstance] mapWithMappingInfo:@{
+                                                                       
+                                                                       
+                                                                       @(1) :@{
+                                                                               kBBTableViewDataSourceClassKey :  @"DemoTableViewDataSource",
+                                                                               kBBTableViewUrlKey:INTERFACE_PRODUCTS,
+                                                                               kBBTableViewDataManagerClassKey:@"DemoASTableViewDataManager"
+                                                                               },
+                                                                       @(2) :@{
+                                                                               kBBTableViewDataSourceClassKey :  @"DemoTableViewDataSource",
+                                                                               kBBTableViewUrlKey:INTERFACE_PRODUCTS,
+                                                                               kBBTableViewDataManagerClassKey:@"DemoTableViewDataManager"
+                                                                               }
+                                                                       }];
+    
+    RootViewController *rootViewController = [[RootViewController alloc]init];
+    self.window.rootViewController = rootViewController;
+    
+    
+    [self.window makeKeyAndVisible];
+    
+    
     return YES;
 }
 

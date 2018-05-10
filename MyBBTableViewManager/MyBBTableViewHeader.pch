@@ -15,4 +15,21 @@
 #ifdef __OBJC__
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import "UIImageView+TTSWebImage.h"
+
+#define HEX_COLOR(x_RGB) [UIColor colorWithRed:((float)((x_RGB & 0xFF0000) >> 16))/255.0 green:((float)((x_RGB & 0xFF00) >> 8))/255.0 blue:((float)(x_RGB & 0xFF))/255.0 alpha:1.0f]
+#define ScreenWidth  [UIScreen mainScreen].bounds.size.width
+
+#define TT_Global_Api_Domain  @"http://139.196.228.153:8086/api"
+#define TT_Global_Photo_Domain   @"http://tticar-test.oss-cn-shanghai.aliyuncs.com/"
+#define TT_Global_h5_Domain   @"http://test.tticar.com/web/tticarstore"
+
+#define TT_Global_Api_Domain_ForC  @"http://106.14.68.135"
+#define TT_Global_Api_Domain_ForNewC  @"http://106.14.68.135:5001"
+#define TT_Global_H5_Api_Domain_ForC @"http://test.h5.c.tticar.com/"
+
+
+#define DEFAULT_ACCESS_TOKEN        @"Basic Zm9vOmJhcg=="
+#define APP_VERSION                 [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]
+#define INTERFACE_PRODUCTS                        @"/visitor/goods"
 #endif
