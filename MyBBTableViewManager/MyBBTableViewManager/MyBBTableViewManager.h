@@ -13,6 +13,7 @@
 #import "MyBBTableViewItem.h"
 #import "MyBBTableViewCell.h"
 #import "MyBBTableViewSection.h"
+#import "BBTableViewDataSource.h"
 
 @protocol MyBBTableViewManagerDelegate;
 
