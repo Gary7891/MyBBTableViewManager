@@ -25,7 +25,7 @@
 ///-----------------------------
 
 /**
- The array of sections. See RETableViewSection reference for details.
+ The array of sections. See BBTableViewSection reference for details.
  */
 @property (strong, readonly, nonatomic) NSArray *sections;
 

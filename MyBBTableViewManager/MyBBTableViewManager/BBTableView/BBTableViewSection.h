@@ -155,7 +155,7 @@ extern CGFloat const BBTableViewSectionFooterHeightAutomatic;
 ///-----------------------------
 
 /**
- The object that provides styling for the section. See RETableViewCellStyle reference for details.
+ The object that provides styling for the section. See BBTableViewCellStyle reference for details.
  */
 @property (strong, readwrite, nonatomic) BBTableViewCellStyle *style;
 

@@ -155,7 +155,7 @@
     if ([item isKindOfClass:[BBTableViewItem class]])
         cellStyle = ((BBTableViewItem *)item).style;
     
-    NSString *cellIdentifier = [NSString stringWithFormat:@"RETableViewManager_%@_%li", [item class], (long) cellStyle];
+    NSString *cellIdentifier = [NSString stringWithFormat:@"BBTableViewManager_%@_%li", [item class], (long) cellStyle];
     
     Class cellClass = [self classForCellAtIndexPath:indexPath];
     
