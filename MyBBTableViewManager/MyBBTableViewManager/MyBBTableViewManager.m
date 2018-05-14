@@ -36,7 +36,7 @@
     
     tableView.delegate = self;
     tableView.dataSource = self;
-    tableView.view.separatorStyle = UITableViewCellSeparatorStyleNone;
+//    tableView.view.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView = tableView;
     
     self.mutableSections = [[NSMutableArray alloc] init];

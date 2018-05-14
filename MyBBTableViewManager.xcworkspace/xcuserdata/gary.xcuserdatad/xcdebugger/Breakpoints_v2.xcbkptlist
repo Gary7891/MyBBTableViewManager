@@ -79,7 +79,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "135"
             endingLineNumber = "135"
-            landmarkName = "-setupDataSource"
+            landmarkName = "-addPullRefresh"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -175,7 +175,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "492"
             endingLineNumber = "492"
-            landmarkName = "-registerClass"
+            landmarkName = "-shouldBatchFetchForTableNode:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -191,7 +191,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "93"
             endingLineNumber = "93"
-            landmarkName = "-initWithTableView:listType:delegate:"
+            landmarkName = "-initWithASTableView:listType:delegate:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
